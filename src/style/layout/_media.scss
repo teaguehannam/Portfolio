@@ -1,0 +1,44 @@
+
+.MediaSelect {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 24px;
+	padding: 32px;
+	text-align: center;
+	color: white;
+
+	
+
+	.Box {
+		@include media-box;
+
+		h2 {
+			line-height: 132px;
+			margin: 0;
+		}
+
+	}
+
+	
+
+}
+
+.Initialize {
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 204px;
+	margin: 0px auto;
+
+	button {
+		background-color:rgba(19,19,19,0.1);
+	}
+
+	@include respond-to("medium") {
+		display: none;
+	}	
+
+}
+

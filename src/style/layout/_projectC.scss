@@ -1,0 +1,124 @@
+.ProjectC {
+	background-color: $highest-brown;
+	min-width: 600px;
+	max-width: 800px;
+	margin: 64px auto 0px auto;
+	text-align: center;
+	box-shadow: 0px 0px 4px 2px rgba(19,19,19,0.27);
+	padding: 0px 12px;
+	transition: box-shadow 0.22s;
+	cursor: default;
+
+	&:hover {
+		box-shadow: 0px 0px 3px 1px rgba(19,19,19,0.33);
+	}
+
+	.ProjectLinks {
+		position: absolute;
+		margin-left: 555px;
+
+		a {
+			text-decoration: none;
+			color: grey;
+			border-right: 1px solid rgba(128,128,128,0.15);
+			border-bottom: 1px solid rgba(128,128,128,0.15);
+			border-left: 1px solid rgba(128,128,128,0.15);
+			padding: 2px 12px;
+			transition: border 0.25s;
+
+			&:hover {
+				border-right: 1px solid grey;
+				border-bottom: 1px solid grey;
+				border-left: 1px solid grey;
+
+			}
+		}
+	}
+
+	.Title {
+		width: 300px;
+		margin: 0px auto;
+
+		a {
+			text-decoration: none;
+			color: #131313;
+			font-size: 2rem;
+			line-height: 4rem;
+			margin: 0;
+			font-weight: 600;
+			transition: color 0.3s;
+
+			&:hover {
+				color: $purp3;
+			}
+
+		}
+		
+
+		h6 {
+			color: grey;
+			text-align: right;
+			font-size: 1rem;
+			line-height: 1rem;
+			text-align: center;
+			margin: 0px 0px 12px 0px;
+		}
+
+	}
+
+	.Article {
+		border-top: 1px solid rgba(19,19,19,0.75);
+		padding-bottom: 24px;
+
+		.Design {
+			border-bottom: 1px solid rgba(19,19,19,0.75);
+		}
+
+		.Tech {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			width: 250px;
+			margin: 0px auto;
+
+			h5 {
+				grid-column: 1 / span 2;
+				line-height: 4rem;
+				font-size: 1.5rem;
+				margin: 0;
+			}
+
+			a {
+				font-size: 1.3rem;
+				line-height: 1.75rem;
+				text-decoration: none;
+			}
+
+		}
+
+	}
+
+	@include respond-to("small"){
+		width: 95%;
+		min-width: unset;
+		max-width: unset;
+		padding: unset;
+
+		.Article {
+			padding: 0px 5px;
+		}
+	}
+
+}
+
+
+.Double {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 32px;
+	margin: 0px auto 128px auto;
+	max-width: 1500px;
+
+	@include respond-to("small") {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

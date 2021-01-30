@@ -1,0 +1,74 @@
+
+@mixin on-event($self: false) {
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}
+
+@mixin respond-to($breakpoint) {
+	$raw-query: map-get($breakpoints, $breakpoint);
+
+	@if $raw-query {
+		$query: if(
+			type-of($raw-query) == 'string',
+			unquote($raw-query),
+			inspect($raw-query)
+		);
+
+		@media #{$query} {
+			@content;
+		}
+	} @else {
+		@error 'No value found for `#{$breakpoint}`. '
+		+ 'Please make sure it is defined in `$breakpoints` map.';
+	}
+}
+
+@mixin media-box() {
+	border: 3px solid $t2;
+	cursor: pointer;
+	transition: border 0.5s;
+	background-color: $t-grey-opacity;
+	color: $highest-brown-opacity;
+
+	&:hover {
+		animation: border-glow;
+		animation-duration: 0.8s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease-out;
+
+	}
+
+
+	@keyframes border-glow {
+		0% {
+			color: $highest-brown-opacity;
+			border: 3px solid $t2;
+		}
+		100% {
+			color: $highest-brown;
+			border: 3px solid $t1;
+		}
+	}
+
+}
+
+@mixin no-highlight() {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

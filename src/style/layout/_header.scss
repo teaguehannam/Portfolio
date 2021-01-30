@@ -1,0 +1,152 @@
+.Header{
+	width: 100%;
+	background: $t-gradient;
+	border-top: 2px solid $t1;
+	height: 4em;
+
+	
+	.Contain {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px auto;
+		width: 95%;
+		max-width: $max-width;
+		border-bottom: 1px solid $t2;
+
+		.Logo {
+			width: 225px;
+			text-align: center;
+			
+
+			a {
+				line-height: 4.21rem;
+				color: white;
+				font-size: 1.8rem;
+				padding-left: 3px;
+
+
+				&:hover, &:focus {
+					text-decoration: none;
+				}
+
+				&:active {
+					color: rgb(226,226,226);
+				}
+
+			}
+			
+		}
+
+		nav {
+			text-align: center;
+			@include no-highlight;
+
+			ul {
+				display: flex;
+				grid-gap: 32px;
+				justify-content: space-around;
+				list-style-type: none;
+				margin: 0; 
+				padding: 0;
+
+				li {
+					width: 100%;
+					min-width: 120px;
+
+					a {
+						line-height: 2rem;
+						color: rgb(242,242,242);
+						text-decoration: none;
+						padding: 1em 0.5em;
+						display: block;
+
+						&:hover, &:focus{
+							text-decoration: none;
+							color: rgb(216,216,216);
+						}
+					}
+
+					.selected {
+						position: relative;
+						display: inline-block;
+					}
+
+					.selected:after {
+						position: absolute;
+						content: "";
+						width: calc(100% - 1em);
+						height: 1px;
+						background-color: $t1;
+						display: block;
+						bottom: -1;
+					}
+
+				}	
+
+			}
+
+		}
+	}
+
+	@include respond-to("small") {
+
+		.Contain {
+			justify-content: space-evenly;
+			width: 90%;
+			margin: 0px auto;
+
+			.Logo {
+				bottom: 0;
+				position: fixed;
+				z-index: 1;
+				width: 100%;
+
+				a {
+					color: $t1;
+					font-size: 1.4rem;
+					padding: 0;
+					margin: 0;
+					line-height: 1.4rem;
+					border-top: 1px solid black;
+					border-right: 1px solid black;
+					float: left;
+					padding: 6px;
+					background-color: $highest-brown;
+
+
+					&::after {
+						visibility: visible;
+						// content: "teaguehannam.com";
+					}
+				}
+
+			}
+
+			nav {
+
+				ul {
+				display: flex;
+				grid-gap: 0px;
+				justify-content: space-around;
+				list-style-type: none;
+				margin: 0; 
+				padding: 0;
+
+					li {
+						width: unset;
+
+						a {
+							font-size: 1.2rem;
+						}
+					}
+				}
+
+			}
+
+
+		}
+
+
+	}
+
+}

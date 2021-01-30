@@ -1,0 +1,45 @@
+
+$text-font-stack: 'Roboto', 'Helvetica', sans-serif !default;
+$code-font-stack: 'Courier New', monospace !default;
+
+$font2: Optima;
+$text-color: rgb(19,19,19) !default;
+$brand-color: rgb(229,0,80) !default;
+
+$cyan: rgb(113,207,212);
+$green: rgb(112,211,120);
+$limeGreen: rgb(172,212,98);
+
+$purp1: rgb(15,22,36);
+$purp1-opacity1: rgba(15,22,36,0.5);
+$purp2: rgb(42,28,79);
+$purp3: rgb(71,63,122);
+
+$yellow1: rgb(239,193,43);
+$yellow1-opacity1: rgba(239,193,43,0.5);
+$yellow1-opacity2: rgba(239,193,43,0.8);
+
+$highest-brown: rgb(253,252,250);
+$highest-brown-opacity: rgba(253,252,250,0.8);
+
+$t1: rgb(194,157,121);
+$t2: rgb(91,78,67);
+$t-grey: rgb(42,41,42);
+$t-grey-opacity: rgba(42,41,42,0.6);
+$t-gradient: linear-gradient(180deg, 
+							rgba(32,31,32,1) 0%, 
+							rgba(42,41,42,1) 100%);
+$v1: rgb(24,17,11);
+$v2: rgb(56,45,36);
+
+$max-width: 1440px !default;
+
+$breakpoints: (
+	'xsmall': (max-width: 500px),
+	'small': (max-width: 820px),
+	'medium': (max-width: 1500px),
+	'large': (max-width: 1900px),
+	'xlarge': (max-width: 2500px)
+) !default;
+
+$base-url: '/assets/' !default;

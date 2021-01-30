@@ -1,0 +1,43 @@
+.SelectProject {
+	display: grid;
+	grid-template-columns: repeat(1, 1);
+	grid-gap: 24px;
+	overflow: auto;
+	margin-bottom: 8px;
+
+	.Box {
+		@include media-box;
+		width: 460px;
+		margin: 0px auto;
+		text-decoration: none;
+		color: $highest-brown;
+
+		h3 {
+			text-align: center;
+			font-size: 1.6rem;
+			line-height: 2rem;
+			margin: 0;
+			max-width: 240px;
+			border-bottom: 2px solid $t2;
+			border-right: 2px solid $t2;
+		}
+
+		p {
+			font-size: 1.2rem;
+			line-height: 2.4rem;
+			text-indent: 5px;
+			margin: 0;
+		}	
+		
+		h5 {
+			font-size: 1rem;
+			line-height: 1rem;
+			margin: 0;
+			text-align: right;
+			padding: 0px 2px;
+			color: grey;
+		}
+
+	}
+
+}

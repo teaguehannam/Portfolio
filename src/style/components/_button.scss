@@ -1,0 +1,73 @@
+
+// --- MediaBox --
+.QuickAccess {
+	position: fixed;
+	height: 28px;
+	width: 28px;
+	background-color: rgba(19,19,19,0.25);
+	box-shadow: 0px 0px 5px black;
+	transition: 0.3s;
+	border-radius: 50%;
+	border-color: $t2;
+
+	p {
+		color: rgba(252,252,252,0.3);
+		line-height: 14px;
+		margin: 0;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	&:hover {
+		background-color: rgba(19,19,19,0.8);
+		border-color: $t1;
+
+		p {
+			color: rgba(252,252,252,0.5);
+
+		}
+	}
+
+	&:active, &:focus {
+		outline: none;
+		border-color: $v2;
+		color: rgba(252,252,252,0.1);
+	}
+
+}
+
+.Wide {
+	width: 200px;
+	height: 64px;
+	border-radius: 12px;
+	background-color: $purp1-opacity1;
+	color: $yellow1-opacity1;
+
+	&:hover {
+		background-color: $purp1;
+		color: $yellow1-opacity2;
+
+	}
+}
+
+.Media {
+	margin: 24px 0px 0px -20px;
+}
+
+.Extend {
+	border-radius: 12px;
+	width: 57px;
+	margin: 18px 0px 0px 0px;
+
+	p {
+		font-size: 16px;
+	}
+
+}
+// --- End MediaBox --
+
+.ContactButton {
+	color: $v2;
+	border: 1px solid $v2;
+	padding: 6px 18px;
+}

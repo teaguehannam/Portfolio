@@ -1,0 +1,80 @@
+.SubHeader{
+	width: 100%;
+	background: $t-grey;
+	height: 1.5em;
+	color: white;
+	@include no-highlight;
+
+
+	.Contain {
+		width: 95%;
+		max-width: $max-width;
+		margin: 0px auto; 
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+
+
+		h3 {
+			margin: 0;
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+			width: 225px;
+		}
+
+		.SubNav {
+			line-height: 1.5rem;
+			display: flex;
+			justify-content: space-around;
+			width: 50%;
+			padding-right: 225px;
+			grid-gap: 0px 36px;
+
+			p {
+				min-width: 92px;
+				cursor: pointer;
+				font-size: 1rem;
+				line-height: 1.5em;
+				margin: 0;
+
+				&:hover {
+					color: grey;
+				}
+
+			}
+		}
+
+	}
+
+	@include respond-to("small") {
+			
+		.Contain {
+
+			h3 {
+				display: none;
+
+			}
+
+			.SubNav {
+				line-height: 1.5rem;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				padding-right: unset;
+				grid-gap: unset;
+
+				p {
+					margin: 0 auto;
+
+					&:hover {
+						color: grey;
+					}
+
+				}
+
+			}
+
+		}
+	}
+
+}

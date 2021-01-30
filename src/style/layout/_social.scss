@@ -1,0 +1,28 @@
+.Social {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	justify-content: space-around;
+	grid-gap: 12px;
+	padding: 12px;
+	height: 100%;
+	text-align: center;
+
+	a {
+		@include media-box;
+		line-height: 52px;
+		padding: 0;
+		margin: 0;
+		font-size: 1.5rem;
+		text-decoration: none;
+
+		
+	} // Box - a
+
+	.GitHub {grid-column: 3 / span 4;grid-row: 1 / span 2;}
+	.GitLab {grid-column: 7 / span 4;grid-row: 1  / span 2;}
+	.LinkedIn {grid-column: 1 / span 4;grid-row: 3 / span 2;}
+	.Contact {grid-column: 5 / span 4;grid-row: 3 / span 2;}
+	.Flickr {grid-column: 9 / span 4;grid-row: 3 / span 2;}
+	.SoundCloud {grid-column: 3 / span 4;grid-row: 5 / span 1;}
+	.YouTube {grid-column: 7 / span 4;grid-row: 5 / span 1;}
+}

@@ -1,0 +1,71 @@
+.Intro {
+	background: $t-grey;
+
+	.Banner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		background: url('../images/banner1.jpg');
+		background-position: center;
+		max-width: $max-width;
+		height: 360px;
+		margin: 0px auto;
+
+		.Text {
+			text-align: center;
+			cursor: default;
+			font-family: $font2;
+
+			h1 {
+				font-size: 48px;
+				padding: 48px 0px;
+				margin: 0px 0px 0px auto;
+				color: $highest-brown;
+			}
+
+			p {
+				line-height: 0;
+				margin: 0;
+				font-size: 36px;
+				color: rgba(252,252,252,0.2);
+			}
+		
+		}
+
+	}
+
+	@include respond-to("medium") {
+			
+		.Banner {
+			grid-template-columns: repeat(1, 1fr);
+
+		}
+
+	}
+
+	@include respond-to("small") {
+
+		.Banner {
+			height: 256px;
+			margin: 0px auto;
+
+			.Text {
+				text-align: center;
+				cursor: default;
+				font-family: $font2;
+
+				h1 {
+					font-size: 36px;
+					padding: 32px 0px;
+					margin: 0px 0px 0px auto;
+					color: $highest-brown;
+				}
+
+				p {
+					font-size: 28px;
+				}
+			}
+		}
+
+	}
+
+}
