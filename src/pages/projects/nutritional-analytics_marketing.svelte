@@ -28,10 +28,10 @@
 	</div>
 	<div class="Article">
 		<p>
-			Landing page to funnel in users into
-			<a href="./nutritional-analytics" target="_blank" rel="noopener">Nutritional Analytics</a>
+			Throwing ideas around for marketing
+			<a href="./nutrient-aware">Nutrient Aware</a>
 		</p>
-		<p>Email signup, light/dark mode, focus on accessibility.</p>
+		<p>Email signup, light/dark mode, page translate would be cool.</p>
 	</div>
 
 

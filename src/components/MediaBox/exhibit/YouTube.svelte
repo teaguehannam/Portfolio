@@ -9,7 +9,6 @@
 	const Videos = [
 		{id: "CQBV6cxeI40?start=16", title:"Tachami", location: "Florida, USA"},
 		{id: "q-ktd4nEi3w?start=140", title:"Lost Frequencies", location: "Royal Palace, Brussels"},
-		{id: "XHNHq1mC0VQ?start=1555", title:"ZHU", location: "Nagano, Japan"},
 		{id: "pfU0QORkRpY", title:"FKJ", location: "Ylang Ylang"},
 		{id: "n_LcVqqHSY8?start=15", title:"Lane 8", location: "Colorado, USA"},
 		{id: "pA96m95T3NA", title:"Parra for Cuva", location: "Cañon del Sumidero, Mexico"},
@@ -17,7 +16,6 @@
 		{id: "F2MLl8tEqYQ", title:"Møme", location: "Tahiti, French Polynesia"},
 		{id: "hENgrbIMiy4", title:"Artbat", location: "Rio de Janeiro, Brazil"},
 		{id: "cVFzblT5VPE", title:"Einmusik & Jonas Saalbach", location: "Preikestolen, Norway"},
-		{id: "SD6GDiyHmbE", title:"Sébastien Léger", location: "Pyramids of Giza, Egypt"},
 		{id: "h96MGcsi7GQ?start=30", title:"Lee Burridge", location: "Bali, Indonesia"},
 	];
  

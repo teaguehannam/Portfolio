@@ -5,17 +5,6 @@
 	import MediaBox from '../components/MediaBox/index.svelte';
 	import Articles from '../data/FeaturedArticles.js';
 
-	let date = Date.now();
-	console.log(`
-		           _______      
-		|       |     |      |
-		|       |     |      |
-		|_______|     |      |   Welcome to
-		|       |     |      |	  console.log
-		|       |     |      |	 
-		|       |  ___|___   .   #${date}
-	`);
-
 	let BannerC;
 	let WebDev;
 	let Design;
@@ -31,8 +20,6 @@
 	});
 
 </script>
-
-<!-- V down here dev V -->
 
 <div class="Intro">
 	<div class="Banner" bind:this={BannerC}>

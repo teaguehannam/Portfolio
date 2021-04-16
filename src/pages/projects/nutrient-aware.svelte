@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import SubHeader from '../../components/SubHeader.svelte';
 
-	let title = "Nutritional Analytics";
+	let title = "Nutrient Aware";
 	let Blog1;
 	onMount(() => {
 		const tl = gsap.timeline();
@@ -15,13 +15,13 @@
 
 <div class="ProjectC" bind:this={Blog1}>
 	<div class="ProjectLinks">
-		<a href="https://nutrientanalytics.netlify.app/">
+		<a href="https://nutrientaware.netlify.app/">
 			Launch site
 		</a>
 	</div>
 	<div class="Title">
-		<a href="./" >Nutritional Analytics</a>
-		<h6>Last updated: <span>1/10/2021</span></h6>
+		<a href="./" >Nutrient Aware</a>
+		<h6>Last updated: <span>1/27/2021</span></h6>
 	</div>
 	<div class="Article">
 		<p>Keep track of eaten foods, get nutrient analytics</p>

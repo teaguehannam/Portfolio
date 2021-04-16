@@ -1,14 +1,14 @@
 
 const Articles = [
 	{
-		title:"Nutritional Analytics",
+		title:"Nutrient Aware",
 		description: "Analyze nutitional intake",
-		link: "./projects/nutritional-analytics"
+		link: "./projects/nutrient-aware"
 	},
 	{
-		title:"Rocketzon",
-		description: "Buy and launch a rocket today!",
-		link: "./projects/rocketzon"
+		title:"Quotes API",
+		description: "Database with graphic management tool",
+		link: "./projects/quotes_api"
 	},
 	{
 		title:"Portfolio",

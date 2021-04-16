@@ -1,10 +1,10 @@
 
 const Projects = [
 	{
-		title:"Nutritional Analytics",
+		title:"Nutrient Aware",
 		type: "Front-end",
-		description: "Add food to list, get nutitional data.",
-		link: "https://nutrientanalytics.netlify.app/"
+		description: "Add food to list, get nutrient levels.",
+		link: "https://nutrientaware.netlify.app/"
 	},
 	{
 		title:"Marketing Page",

@@ -10,7 +10,7 @@
 			alert("Fill out all inputs 😊");
 		} else {
 			// alert(`${message.type} type\nfrom ${message.from}\n${message.message}`);
-			alert("Message sent!");
+			alert("Message not actually sent");
 			message.type = "casual";
 			message.from = "";
 			message.message = "";

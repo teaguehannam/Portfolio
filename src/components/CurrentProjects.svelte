@@ -11,10 +11,11 @@
 		const tl = gsap.timeline();
 		tl.from(Title, {duration: 0.15, height:0, opacity: 0, delay: 0.2})
 		  .from(Box1, {duration: time, opacity: 0})
+		  .from(Box2, {duration: time, opacity: 0})
 	});
 </script>
 
-<h2 bind:this={Title}>Currently being worked on</h2>
-<a href="./projects/nutritional-analytics" bind:this={Box1}>
-	Nutritional Analytics
+<h2 bind:this={Title}>Projects in progress</h2>
+<a href="./projects/nutrient-aware" bind:this={Box1}>
+	Nutrient Aware
 </a>

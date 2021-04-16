@@ -16,13 +16,12 @@
 <div class="ProjectC" bind:this={Blog1}>
 	<div class="Title">
 		<a href="../" >TeagueHannam.com</a>
-		<h6>Last updated: <span>1/10/2021</span></h6>
+		<h6>Last updated: <span>2/5/2021</span></h6>
 	</div>
 	<div class="Article">
-		<p>Showcase of my website experience,</p>
-		<p>and a point of contact for anyone.</p>
+		<p>Showcase of my website experience.</p>
 		<div class="Design">
-			<p>Focused on being clean and lightweight.</p>
+			<p>Focused on being clean, lightweight, and to the point.</p>
 		</div>
 		<div class="Tech">
 			<h5>Tech Stack:</h5>
