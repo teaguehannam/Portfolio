@@ -15,14 +15,12 @@
 	'style/base/helpers';
 
 @import
-	'style/layout/contact',
 	'style/layout/header',
 	'style/layout/featured',
 	'style/layout/subHeader',
 	'style/layout/media',
 	'style/layout/skillsC',
 	'style/layout/projectC',
-	'style/layout/projectsIndex',
 	'style/layout/projectsExhibit',
 	'style/layout/social',
 	'style/layout/youTube';
@@ -31,7 +29,9 @@
 	'style/components/button';
 
 @import
+	'style/pages/contact',
 	'style/pages/intro',
+	'style/pages/projectsIndex',
 	'style/pages/skills';
 
 @import

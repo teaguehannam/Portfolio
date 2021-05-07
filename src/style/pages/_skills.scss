@@ -1,6 +1,138 @@
 .Skills {
-	max-width: 1200px;
-	margin: 64px auto 0px auto;
-	cursor: default;
+	display: grid;
+	grid-gap: 32px 0px;
+	padding-top: 48px;
+
+	img {
+		width: 100%;
+		max-width: 128px;
+	}
+
+	.Category {
+		max-width: 720px;
+		margin: 0px auto;
+		text-align: center;
+		width: 100%;
+
+		.Subtitle {
+			font-size: 1.5rem;
+
+			font-weight: 600;
+		} // Subtitle
+	}
+
+	.Tech {
+
+		.Preference {
+			display: grid;
+
+			.Subtitle {
+				color: $t2;
+			}
+
+			.Icons {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 0px 24px;
+				margin: 16px auto;
+				width: 500px;
+			} // Icons
+
+		} // Preference
+
+		.Experienced {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			.Title {
+				margin: 16px 0px;
+			}
+			
+			.Title, .Subtitle {
+				grid-column: 1 / span 3;
+			}
+
+		} // Experienced
+	} // Tech
+
+	.Functionality {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 500px;
+		padding-bottom: 1rem;
+
+		.Title {
+			grid-column: 1 / span 2;
+		}
+
+		.Box {
+			p {
+				margin: 0;
+			}
+		}
+	} // Functionality
+
+	.Libraries {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 800px;
+
+		.Title {
+			grid-column: 1 / span 4;
+		}
+
+	} // Libraries
+
+	.Spacer {
+		height: 64px;
+	}
+
+	// ---- Media Query - xsmall ----
+	@include respond-to("small") {
+		.Category {
+			width: 80%;
+		}
+
+		.Tech {
+			.Preference {
+				.Icons {
+					grid-template-columns: repeat(2, 1fr);
+					width: unset;
+
+					.Title, .Node {
+						grid-column: 1 / span 2;
+					}
+
+					.Box {
+						p {
+							line-height: 0
+						}
+					}
+				} // Icons
+			} // Preference
+
+			.Experienced {
+				grid-template-columns: repeat(2, 1fr);
+
+				.Title, .Subtitle {
+					grid-column: 1 / span 2;
+				}
+
+				.Meh {
+					display: none;
+				}
+
+			} // Experienced
+		} // Tech
+
+		.Libraries {
+			grid-template-columns: repeat(2, 1fr);
+
+			.Title {
+				grid-column: 1 / span 2;
+			}
+		}
+
+	} // Media Query - xsmall
 
 }

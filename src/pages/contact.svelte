@@ -3,8 +3,6 @@
 	import { onMount } from 'svelte';
 	import { message } from "../store/message.js";
 
-	let messageTypes = ['casual', 'formal'];
-
 	function handleSubmit() {
 		if (typeof message.from==="undefined" || typeof message.message==="undefined" || message.from==="" || message.message==="") {
 			alert("Fill out all inputs 😊");
@@ -29,16 +27,7 @@
 <form class="Contact" on:submit|preventDefault={handleSubmit} bind:this={ContactC}>
 
 	<div class="Title">
-		<h4>Send </h4>
-		<select class="MessageType" bind:value={message.type}>
-			<option value={messageTypes[0]}>
-				{messageTypes[0]}
-			</option>
-			<option value={messageTypes[1]}>
-				{messageTypes[1]}
-			</option>
-		</select>
-		<h4> message</h4>
+		<h4>Send message</h4>
 	</div>
 		
 	<div class="Sender">
