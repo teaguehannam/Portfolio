@@ -16,7 +16,7 @@
 <div class="ProjectC" bind:this={Blog1}>
 	<div class="Title">
 		<a href="../" >TeagueHannam.com</a>
-		<h6>Last updated: <span>2/5/2021</span></h6>
+		<h6>Last updated: <span>5/24/2021</span></h6>
 	</div>
 	<div class="Article">
 		<p>Showcase of my website experience.</p>

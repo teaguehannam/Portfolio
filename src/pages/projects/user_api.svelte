@@ -15,7 +15,7 @@
 
 <div class="ProjectC" bind:this={Blog1}>
 	<div class="Title">
-		<a href="https://rocket-sales.netlify.app/" target="_blank" rel="noopener">User API</a>
+		<a href="" target="_blank" rel="noopener">User API</a>
 		<h6>Not released</h6>
 	</div>
 	<div class="Article">
