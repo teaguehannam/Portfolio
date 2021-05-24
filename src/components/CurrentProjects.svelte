@@ -19,3 +19,6 @@
 <a href="./projects/nutrient-aware" bind:this={Box1}>
 	Nutrient Aware
 </a>
+<a href="./projects/nutrient-library" bind:this={Box2}>
+	Nutrient Library
+</a>

@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import SubHeader from '../../components/SubHeader.svelte';
 
-	let title = "Marketing Page";
+	let title = "Landing Page";
 	let Blog1;
 	onMount(() => {
 		const tl = gsap.timeline();
@@ -23,7 +23,7 @@
 		</a>
 	</div>
 	<div class="Title">
-		<a href="https://micronutrients.netlify.app/" target="_blank" rel="noopener">Marketing Page</a>
+		<a href="https://micronutrients.netlify.app/" target="_blank" rel="noopener">{title}</a>
 		<h6>Last updated: <span>9/23/2020</span></h6>
 	</div>
 	<div class="Article">

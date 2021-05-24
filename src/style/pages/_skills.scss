@@ -23,23 +23,6 @@
 
 	.Tech {
 
-		.Preference {
-			display: grid;
-
-			.Subtitle {
-				color: $t2;
-			}
-
-			.Icons {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				grid-gap: 0px 24px;
-				margin: 16px auto;
-				width: 500px;
-			} // Icons
-
-		} // Preference
-
 		.Experienced {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);

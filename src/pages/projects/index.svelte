@@ -4,15 +4,15 @@
 	import CurrentProjects from '../../components/CurrentProjects.svelte';
 
 	let title = "All Projects";
-	let ShowComplete = true;
+	let ShowAll = true;
 	
-	const toggleAll = () => {
-		ShowComplete = true;
+	function toggleAll() {
+		ShowAll = true;
 		title = "All Projects";
 	}
 
-	const toggleCurrent = () => {
-		ShowComplete = false;
+	function toggleCurrent() {
+		ShowAll = false;
 		title = "In progress";
 	}
 
@@ -26,7 +26,7 @@
 <SubHeader title={title} sections={sections} />
 
 <div class="ProjectsIndex">
-	{#if ShowComplete}
+	{#if ShowAll}
 		<AllProjects />
 	{:else}
 		<CurrentProjects />

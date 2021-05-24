@@ -2,18 +2,18 @@
 const Articles = [
 	{
 		title:"Nutrient Aware",
-		description: "Analyze nutitional intake",
+		description: "Analyze nutritional intake",
 		link: "./projects/nutrient-aware"
 	},
 	{
-		title:"Quotes API",
-		description: "Database with graphic management tool",
-		link: "./projects/quotes_api"
+		title:"Rocketzon",
+		description: "Trying out HTML canvas effects",
+		link: "./projects/rocketzon"
 	},
 	{
-		title:"Portfolio",
-		description: "Focus of this website",
-		link: "./projects/portfolio"
+		title:"Nutrient Library",
+		description: "Information on molecular nutrients",
+		link: "./projects/nutrient-library"
 	},
 ];
 
