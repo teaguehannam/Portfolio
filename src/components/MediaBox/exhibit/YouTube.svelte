@@ -7,7 +7,7 @@
 	let currentVideo = "https://www.youtube.com/embed/";
 
 	const Videos = [
-		{id: "CQBV6cxeI40?start=16", title:"Tachami", location: "Florida, USA"},
+		{id: "CQBV6cxeI40?start=25", title:"Tachami", location: "Florida, USA"},
 		{id: "q-ktd4nEi3w?start=140", title:"Lost Frequencies", location: "Royal Palace, Brussels"},
 		{id: "pfU0QORkRpY", title:"FKJ", location: "Ylang Ylang"},
 		{id: "n_LcVqqHSY8?start=15", title:"Lane 8", location: "Colorado, USA"},

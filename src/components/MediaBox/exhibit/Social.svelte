@@ -9,7 +9,7 @@
 	let Contact;
 	let SoundCloud;
 	let YouTube;
-	let Flickr;
+	let Twitter;
 
 	onMount(() => {
 		const tl = gsap.timeline();
@@ -17,7 +17,7 @@
 		  .from(LinkedIn, {duration: 0.05, ease: "sine.inout", opacity: 0})
 		  .from(Github, {duration: 0.05, ease: "sine.inout", opacity: 0})
 		  .from(GitLab, {duration: 0.05, ease: "sine.inout", opacity: 0})
-		  .from(Flickr, {duration: 0.05, ease: "sine.inout", opacity: 0})
+		  .from(Twitter, {duration: 0.05, ease: "sine.inout", opacity: 0})
 		  .from(YouTube, {duration: 0.05, ease: "sine.inout", opacity: 0})
 		  .from(Contact, {duration: 0.15, ease: "sine.inout", opacity: 0})
 	});
@@ -42,8 +42,8 @@
 		<p>Contact</p>
 	</a>
 	<a class="Flickr" 
-		href="https://www.flickr.com/photos/teayo/" bind:this={Flickr}>
-		<p>Flickr</p>
+		href="https://twitter.com/teaguehannam" bind:this={Twitter}>
+		<p>Twitter</p>
 	</a>
 	<a class="SoundCloud" 
 		href="https://soundcloud.com/teayo/" bind:this={SoundCloud}>
