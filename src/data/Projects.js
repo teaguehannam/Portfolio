@@ -1,18 +1,18 @@
 
 const Projects = [
 	{
+		title:"FXsmoothie",
+		type: "Front-end",
+		description: "Build a customized smoothie",
+		expand: "./projects/fxsmoothie",
+		link: "https://fxsmoothie.com"
+	},
+	{
 		title:"Kondoboard",
 		type: "Back-end",
 		description: "Users/Jobs database and API",
 		expand: "./projects/kondoboard_api",
 		link: "https://github.com/Lambda-School-Labs/kondoboard-backend/blob/master/README.md"
-	},
-	{
-		title:"Landing Page",
-		type: "Front-end",
-		description: "Landing page built in React.",
-		expand: "./projects/nutritional-analytics_marketing",
-		link: "https://micronutrients.netlify.app/"
 	},
 	{
 		title:"Nutrient Aware",

@@ -6,9 +6,9 @@ const Articles = [
 		link: "./projects/nutrient-aware"
 	},
 	{
-		title:"Rocketzon",
-		description: "Trying out HTML canvas effects",
-		link: "./projects/rocketzon"
+		title:"FXsmoothie",
+		description: "Build a smoothie for desired benefits",
+		link: "./projects/fxsmoothie"
 	},
 	{
 		title:"Nutrient Library",
