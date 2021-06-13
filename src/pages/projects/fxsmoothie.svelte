@@ -20,7 +20,7 @@
 		</a>
 	</div>
 	<div class="Title">
-		<a href="./" >Nutrient Aware</a>
+		<a href="./" >FX Smoothie</a>
 		<h6>Last updated: <span>6/11/2021</span></h6>
 	</div>
 	<div class="Article">
